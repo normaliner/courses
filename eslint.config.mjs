@@ -1,5 +1,5 @@
 import { FlatCompat } from "@eslint/eslintrc";
-import { rules } from "eslint-config-prettier";
+import eslintConfigPrettier from "eslint-config-prettier";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 
@@ -11,10 +11,15 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript", "prettier"),
-  (rules = {
-    "no-unused-vars": "off",
-  }),
+  ...compat.extends("next/core-web-vitals"),
+  {
+    rules: {
+      "no-unused-vars": "off",
+      "no-const-assign": "error",
+    },
+  },
+
+  eslintConfigPrettier,
 ];
 
 export default eslintConfig;

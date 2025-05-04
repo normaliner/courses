@@ -23,7 +23,7 @@ export const CourseItem = ({
       await onDelete();
     });
   };
-  console.log(isLoadingDelete);
+
   return (
     <Card>
       <CardHeader>
