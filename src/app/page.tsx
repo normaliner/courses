@@ -4,7 +4,7 @@ import { CreateCourseForm } from "@/feature/courses-list/pub/create-courses.form
 export default async function Home() {
   return (
     <div className="flex flex-col min-h-screen p-8">
-      <h1>Courses TEST TEST</h1>
+      <h1 className="font-bold mb-5">Courses</h1>
       <CreateCourseForm
         revalidatePagePath="/"
         className="max-w-[300px] mb-10"
