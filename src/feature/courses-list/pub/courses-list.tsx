@@ -1,6 +1,6 @@
-import { revalidatePath } from "next/cache";
-import { coursesRepository } from "../courses.repository";
-import { CourseItem } from "../ui/courses-item";
+import { revalidatePath } from "next/cache"
+import { coursesRepository } from "../courses.repository"
+import { CourseItem } from "../ui/courses-item"
 
 export const CoursesList = async ({
   revalidatePagePath,

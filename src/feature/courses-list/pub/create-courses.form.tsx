@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/shared/ui/button"
 import {
   Form,
   FormControl,
@@ -8,15 +8,15 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { cn } from "@/lib/utils";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useTransition } from "react";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
-import { createCourseAction } from "../actions";
+} from "@/shared/ui/form"
+import { Input } from "@/shared/ui/input"
+import { Textarea } from "@/shared/ui/textarea"
+import { cn } from "@/shared/lib/utils"
+import { zodResolver } from "@hookform/resolvers/zod"
+import { useTransition } from "react"
+import { useForm } from "react-hook-form"
+import { z } from "zod"
+import { createCourseAction } from "../actions"
 
 const createCoursesFormSchema = z.object({
   name: z.string(),
